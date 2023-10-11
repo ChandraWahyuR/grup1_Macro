@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(209, 209, 209);
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    margin: 6.5rem auto 2rem auto;
+    border:100px;
+    border-width: 100px;
+    border-radius: 24px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 1300px;
+    height: 714px;
+    align-items: center;
+    justify-content: center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    gap: 10px;
+}
+.logo {
+    width: 290px;
+    height: 112px;
+}
+h1 {
+    font-size: 24px;
+}
+p {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+label, .form-input {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    gap:2px;
+}
+form {
+    width: 100%;
+    max-width: 400px;
+
+}
+.inputan  {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.inputan .field1 {
+    width: 215px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #FF6207;
+    gap :2px   
+}
+.inputan .field2 {
+    width: 187px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #FF6207;
+    gap :2px   
+}
+
+.namauser{
+    gap: 5px;
+}
+input {
+    font-weight: 400;
+}
+.field {
+    width: 422px;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #FF6207;
+    gap :2px;
+}
+.ingat {
+    display: flex;
+    margin-right: 2px;
+}
+.ingat p {
+    font-size: 16px;
+}
+.peringatan {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.masuk {
+    display: block;
+    width: 422px;
+    padding: 8px;
+    background-color: #FF6207;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+.content {
+    width: 100%;
+    height: 100%;
+}
+.content img {
+    border-radius: 24px 0 0 24px ;
+}
