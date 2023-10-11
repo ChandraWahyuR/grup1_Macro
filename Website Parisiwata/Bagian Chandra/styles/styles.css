@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+/* Carosel */
+.carousel {
+    padding: 0 30px;
+}
+
+.carousel img {
+    padding: 70px 10px;
+    width: 100%;
+}
+
+
+/* Card Kategori */
+.container-pembungkus {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; 
+    
+}
+
+.card-kategori {
+    width: 200px; 
+    height: 200px; 
+    text-align: center; 
+    background-color: #ffff;
+    border: 1px solid #CECECE;
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.container-pembungkus i{
+    color: #FE8D4D;
+}
+
+.card-kategori i {
+    display: block;
+    font-size: 75px;
+    margin: 20px;
+}
+
+.card-kategori h3 {
+    margin-top: 10px;
+    font-size: 18px; 
+}
+
+/* Tombol */
+.carousel-button {
+    background: #a4a4a4;
+    color: white;
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+}
+
+#prevButton {
+    left: 10px;
+    margin-left: 50px;
+}
+
+#nextButton {
+    right: 10px;
+    margin-right: 50px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  */
+
+
+/*  */
+
+/* Container Filter dan Card */
+.body-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* Sub judul */
+.sub-judul-tempat {
+    text-align: center; 
+    margin: 200px ; 
+}
+
+/* Filter Box */
+.container-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 0px 20px 20px;
+}
+
+.filter-box {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-box .input-filter{
+    margin: 35px 0px;
+}
+
+.filter-box h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color:  #FF6A16;
+}
+
+.filter-box input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+.filter-box button {
+    padding: 10px 20px;
+    background-color: #FF6A16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+#btnCari{
+    font-weight: bold;
+}
+
+button#btnCari {
+    background-color: #FF6A16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+button#btnCari i {
+    margin-right: 5px; 
+}
+
+
+/* Ghosting Box */
+.container-ghosting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 0px 20px 20px;
+}
+
+/* Style untuk judul kelompok */
+.group-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Card */
+.card {
+    position: relative;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.lokasi {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.lokasi-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+
+
+.lokasi-info h2 {
+    font-size: 1.5rem;
+    color:  #FF6A16;
+    margin: 0;
+}
+
+.lokasi-info p {
+    margin: 0;
+    color: #888;
+}
+
+.lokasi-info .harga {
+    font-weight: bold;
+    color: #f60;
+    margin-top: 8px;
+}
+
+.card .harga {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgb(165, 165, 165);
+}
+
+
+.container {
+    padding: 10px;
+}
+
+
+.card hr {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Harga */
+
+.harga-container {
+    position: relative;/* Absolut Powah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-group-disc .harga {
+    padding-bottom: 20px;
+    color: #FF0000;
+    text-decoration: line-through;
+}
+
+.card-group-disc .harga-disc {
+    position: absolute;
+    top: 0;
+    color: #FF6A16;
+    padding: 30px;
+}
+
+
+.diskont {
+    position: absolute;
+    background-color: #FF6A16;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+    top: 5px;
+    left: 7px;
+    z-index: 1;
+}
+
+.sub-judul-tempat {
+    margin: 25px 5px;
+}
