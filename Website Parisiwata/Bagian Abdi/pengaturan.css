@@ -220,7 +220,7 @@ form {
   border: none;
   padding: 8px;
   border-radius: 8px;
-  border: 1px;
+  border: 1px solid #ccc;
   gap :2px   
 }
 .inputan .field2 {
@@ -228,7 +228,7 @@ form {
   border: none;
   padding: 8px;
   border-radius: 8px;
-  border: 1px;
+  border: 1px solid #ccc;
   gap :2px   
 }
 
