@@ -11,9 +11,9 @@
     <title>Halaman Pembelian Tiket</title>
 </head>
 
-<body>
+<body class="bodys">
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbars">
         <div class="logo">
             <img src="gb/logo.png" alt="Logo">
         </div>
@@ -51,19 +51,19 @@
 
     <!-- Detail Tiket -->
     <div class="detail-tiket">
-        <div class="card">
-            <div class="card-header"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 20">
+        <div class="cards">
+            <div class="card-headers"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 20">
                     <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
                 </svg>Detail Pesanan Tiket</div>
-            <div class="card-container">
-                <div class="card-right">
+            <div class="card-containers">
+                <div class="card-rights">
                     <div class="card1">
-                        <h4>Paket Terpilih</h4>
+                        <h4 class="H4">Paket Terpilih</h4>
                         <div class="inner-card">
-                            <h4>IDR 100.000
-                                <hr>
+                            <h4 class="H4">IDR 100.000
+                                <hr class="HR">
                             </h4>
-                            <h4>Tiket Standard</h4>
+                            <h4 class="H4">Tiket Standard</h4>
                             <ul>
                                 <li>Berlaku sesuai tanggal yang dipilih</li>
                                 <li>Tidak bisa refund</li>
@@ -74,8 +74,8 @@
                     </div>
                 </div>
 
-                <div class="card-left">
-                    <div class="card2">
+                <div class="card-lefts">
+                    <div class="cards2">
                         <div class="label-group">
                             <label for="tanggal">Tanggal</label>
                             <input type="date" id="tanggal" name="tanggal">
@@ -85,12 +85,12 @@
                             <input type="input" id="input" name="input">
                         </div>
                         <div class="deskripsi">Deskripsi Pesanan
-                            <hr>
+                            <hr class="HR">
                         </div>
                         <div class="deskripsi-tanggal">Tanggal</div>
                         <div class="deskripsi-harga">
                             <p>Total Harga</p>
-                            <h4>IDR 100.000</h4>
+                            <h4 class="H4">IDR 100.000</h4>
                         </div>
                         <button class="button-buy" data-bs-toggle="modal" data-bs-target="#myModal">Beli</button>
                     </div>
@@ -110,7 +110,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="body-container">
-                            
+
                             <div class="labels">
                                 <label class="label-item">Nama :</label>
                                 <label class="label-item">Tanggal :</label>
@@ -130,9 +130,9 @@
 
                     </div>
                     <div class="modal-footer">
-                        <a href="detail.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                       <a href="detail.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                             Batal
-                        </button></a>
+                        </button></a> 
                         <a href="detail.html"><button type="button" class="btn btn-outline-warning" data-bs-dismiss="modal">
                             Konfirmasi
                         </button></a>
