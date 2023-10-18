@@ -24,14 +24,14 @@ a {
 
 /* Carosel */
 .carousel {
-    padding: 0 30px;
+    padding: 0 0.1px;
 }
 
-.carousel img {
-    padding: 70px 10px;
+.carousel img{
+    padding: 0px 0px;
     width: 100%;
+    border-radius: 1px;
 }
-
 
 /* Card Kategori */
 .container-pembungkus {
@@ -123,6 +123,8 @@ a {
 }
 
 /* Filter Box */
+
+/* Filter */
 .container-filter {
     display: flex;
     flex-direction: column;
@@ -139,22 +141,18 @@ a {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.filter-box .input-filter{
-    margin: 35px 0px;
-}
-
 .filter-box h1 {
     margin-bottom: 10px;
     font-size: 25px;
-    color:  #FF6A16;
+    color: #FF6A16;
 }
 
-.filter-box input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
+.dropdown-filter #kab-drop{
+    margin-top: 35px;
+}
+
+.dropdown-filter #kot-drop{
+    margin-bottom: 35px;
 }
 
 .filter-box button {
@@ -170,7 +168,7 @@ a {
     margin-bottom: 15px;
 }
 
-#btnCari{
+#btnCari {
     font-weight: bold;
 }
 
@@ -180,15 +178,39 @@ button#btnCari {
     border: none;
     cursor: pointer;
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 10px 20px;
     border-radius: 25px;
 }
 
 button#btnCari i {
-    margin-right: 5px; 
+    margin-right: 5px;
 }
 
+
+.dropdown-filter select {
+    width: 100px;
+}
+
+#kab-drop,
+#kot-drop {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#kab-drop:hover,
+#kot-drop:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+
+/*  */
 
 /* Ghosting Box */
 .container-ghosting {

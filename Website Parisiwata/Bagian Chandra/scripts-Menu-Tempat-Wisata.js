@@ -1,46 +1,48 @@
 // Filter
-function showDropdown(inputId) {
-    const inputElement = document.getElementById(inputId);
-    const dropdownElement = document.getElementById(`dropdown-${inputId}`);
-    const inputValue = inputElement.value.toLowerCase(); 
-    const dropdownData = [
-        "Kabupaten Situ",
-        "Kabupaten Mana",
-        "Kabupaten Nggatahu",
-        "Masih bingung Kotanya"
-    ];
-    const filteredData = dropdownData.filter(item => item.toLowerCase().includes(inputValue));
+let kab = ["Lampung", "Medan",  "NTT", "Purbalingga", "Tapanuli"]
+let kotaA = ["Bandra Lampung","Metro", "Menggala", "Gunung Agung", "Kedaton"]
+let kotaB = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
+let kotaC = ["","C2", "", "", ""]
+let kotaD = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
+let kotaE = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
 
+let sclt1 = document.getElementById("kab-drop")
+let sclt2 = document.getElementById("kot-drop")
 
-    if (filteredData.length > 0) {
-        dropdownElement.innerHTML = ""; 
-        filteredData.forEach(item => {
-            const option = document.createElement("div");
-            option.textContent = item;
-            option.addEventListener("click", () => {
-                inputElement.value = item;
-                dropdownElement.innerHTML = ""; 
-            });
-            dropdownElement.appendChild(option);
-        });
-        dropdownElement.style.display = "block";
-    } else {
-        dropdownElement.style.display = "none"; 
+kab.forEach(function addkab(item){
+    let option = document.createElement("option");
+    option.text = item;
+    option.value = item;
+    sclt1.appendChild(option);
+});
+
+sclt1.onchange = function() {
+    sclt2.innerHTML = "<option>Kota</option>";
+    if(this.value == "Lampung"){
+        addToSlct2(kotaA)
+    }
+    if(this.value == "Medan"){
+        addToSlct2(kotaB)
+    }
+    if(this.value == "NTT"){
+        addToSlct2(kotaC)
+    }
+    if(this.value == "Purbalingga"){
+        addToSlct2(kotaD)
+    }
+    if(this.value == "Tapanuli"){
+        addToSlct2(kotaE)
     }
 }
 
-
-document.addEventListener("click", function (e) {
-    const inputs = document.querySelectorAll("input");
-    inputs.forEach(input => {
-        if (!input.contains(e.target)) {
-            const dropdown = document.getElementById(`dropdown-${input.id}`);
-            if (dropdown) {
-                dropdown.style.display = "none";
-            }
-        }
-    });
-});
+function addToSlct2(arr){
+    arr.forEach(function (item){
+        let option = document.createElement("option")
+        option.text = item;
+        option.value = item;
+        sclt2.append(option)
+    })
+}
 
 // Card Kategori
 const cardContainer = document.querySelector(".container-pembungkus");

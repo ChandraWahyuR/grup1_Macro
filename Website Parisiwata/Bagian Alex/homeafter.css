@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  
+    font-family: 'Poppins',sans-serif;
   }
   
   body {
@@ -343,7 +343,7 @@ button {
     text-align: center;
 }
 .text h1{
-    margin:4rem 5rem 2rem;
+    margin:4rem 6rem 4rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-size: 40px;
@@ -352,53 +352,186 @@ button {
 }
 
 /* card */
-.card-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-}
-.card{
-    width: 300px;
-    height: 410px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-}
-.card img{
-    width: 100%;
-    height: 350px;
-}
-.card-content{
-    padding: 16px;
-}
-.card-content h3{
-    font-size: 16px;
-    text-align: center;
-    margin-bottom:8px ;
-}
+/* card */
+.big-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  li {
+  list-style: none;
+  margin-right: 20px;
+  }
+  
+  a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  }
+  
+  
+  /* Card Kategori */
+  .container-pembungkus {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 50px; 
+  
+  }
+  
+  /* .card-kategori {
+  width: 200px; 
+  height: 400px; 
+  text-align: center; 
+  background-color: #ffff;
+  border: 1px solid #CECECE;
+  border-radius: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
+  padding: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  } */
+  
+  .container-pembungkus i{
+  color: #FE8D4D;
+  }
+  
+  .card-kategori i {
+  display: block;
+  font-size: 75px;
+  margin: 20px;
+  }
+  
+  .card-kategori h3 {
+  margin-top: 5px;
+  font-size: 18px; 
+  }
+  
+  /* Tombol */
+  .carousel-btn {
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .new-container{
+  display: flex;
+  }
+  
+  #prevButton {
+  font-size: 2rem;
+  left: 10px;
+  margin: auto;
+  background-color: white;
+  }
+  
+  #nextButton {
+  font-size: 2rem;
+  right: 10px;
+  margin: auto;
+  background-color: white;
+  }
+  
+  .carousel-container {
+  width: 1150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  /*  */
+  
+  
+  /*  */
+  .card-kategori {
+  width: 350px;
+  height: 436px;
+  text-align: center;
+  background-color: #ffff;
+  border: 1px solid #CECECE;
+  border-radius: 10px;
+  display:grid;
+  grid-template-rows: 8fr 1fr;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.3s;
+  
+  }
+  .card-image{
+  height: 100%;
+  }
+  
+  .card-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  
+  }
+  
+  .card-kategori {
+  min-width: 350px;
+  min-height: 436px;
+  height: 100%;
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+  }
+  
+  
+  ul{
+  bottom: 20px;
+  color: rgb(0, 0, 0);
+  }
+  
+  .spiral-erobos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  }
+  
+  .spiral-erobos li {
+  width: 15px;
+  height: 15px;
+  background-color: #B4B1B1;
+  border-radius: 50%; 
+  margin: 20px 10px; 
+  }
+  
+  .spiral-erobos li:nth-child(1) {
+  background: black;
+  }
 
 /* grid */
 .image-grid {
-    margin:4rem 22rem 4rem; 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan lebar yang sama */
-    grid-gap: 5px; /* Jarak antara item grid */
+  display: grid;
+  grid-template-columns: 400px 400px;
+  /* background-color: #2196F3; */
+  padding: 10px 150px 30px;
+  justify-content: center;
 }
 
 .grid-item {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+  padding: 4px;
+  width: 100%;
+  height: auto;
 }
 
 .grid-item img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  border: 10px;
 }
-
 
 /* Footer */
 /* Style untuk footer */

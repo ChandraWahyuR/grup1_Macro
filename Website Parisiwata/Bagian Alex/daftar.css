@@ -98,6 +98,12 @@ input {
     display: flex;
     margin-right: 2px;
 }
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    accent-color: #ff6207;
+  }
+
 .ingat p {
     font-size: 16px;
 }
