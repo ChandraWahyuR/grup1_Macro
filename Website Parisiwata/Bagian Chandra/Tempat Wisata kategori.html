@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okeh 2</title>
+    <title>Menu Pariwisata Alam</title>
     <link rel="stylesheet" href="styles/styles2.css">
     <link rel="stylesheet" href="styles/navbar/navbar.css">
     <link rel="stylesheet" href="styles/fotter/foter.css">
@@ -21,20 +21,22 @@
             <ul class="nav-links">
                 <li><a href="../Bagian Alex/homeafter.html"><i class="fa-solid fa-house"></i>Beranda</a></li>
                 <li class="dropdown">
-                    <a href="../Bagian Abdi/event.html" class="dropbtn"><i class="fa-solid fa-calendar-days"></i>Event</a>
+                    <a href="../Bagian Abdi/event.html" class="dropbtn"><i
+                            class="fa-solid fa-calendar-days"></i>Event</a>
                     <div class="dropdown-content">
                         <a href="../Bagian Abdi/event.html">Event</a>
                         <a href="../Bagian Vina/Halaman Promo/promo.html">Promo</a>
                     </div>
                 </li>
-                <li><a href="Menu Tempat Wisata Sudah Masuk Provinsi.html"><i class="fa-solid fa-place-of-worship"></i>Tempat Wisata</a></li>
+                <li><a href="Menu Tempat Wisata Sudah Masuk Provinsi.html"><i
+                            class="fa-solid fa-place-of-worship"></i>Tempat Wisata</a></li>
                 <li><a href="../Bagian Abdi/profil.html"><i class="fa-solid fa-user"></i>Profile</a></li>
-    
+
                 <div class="header-right">
                     <div class="search-bar">
                         <input type="text" placeholder="Cari...">
                         <button class="search-button"><i class="fa fa-fw fa-search"></i></button>
-                    </div> 
+                    </div>
                 </div>
             </ul>
         </div>
@@ -49,7 +51,7 @@
     </nav>
     <!-- Joedul -->
     <div class="sub-judul-hal">
-        <h3>Nikmati pengalaman dalam ......</h3>
+        <h3>Nikmati Pengalaman Baru</h3>
         <h3>Kategori - Wisata Alam</h3>
     </div>
     <!-- Carosel -->
@@ -68,61 +70,71 @@
         <!-- Filter Box -->
         <div class="container-filter">
             <div class="filter-box">
-                <h1>Filter:</h1>
-                <div class="input-filter">
-                    <input type="text" id="kabupaten" placeholder="Masukkan Kabupaten"
-                        oninput="showDropdown('kabupaten')">
-                    <input type="text" id="kota" placeholder="Masukkan Kota" oninput="showDropdown('kota')">
+                <h1>Filter: </h1>
+                <div class="dropdown-filter">
+                    <select id="kab-drop">
+                        <option>Kab/Prov</option>
+                    </select>
+                    <div class="caret"></div>
                 </div>
-                <div id="dropdown-kabupaten" class="dropdown-content"></div>
-                <div id="dropdown-kota" class="dropdown-content"></div>
+                <div class="dropdown-filter">
+                    <select id="kot-drop">
+                        <option>Kota</option>
+                    </select>
+                </div>
                 <button id="btnCari"><i class="fa-solid fa-magnifying-glass"></i>Cari</button>
             </div>
         </div>
-
         <!-- Card -->
         <!-- Grup 1 -->
         <div class="card-group">
             <div class="card-container">
+                <!-- 1 -->
                 <div class="card">
-                    <img src="images/Hal 2/Danau.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 1/Tapanuli/Air_terjun_tibu_sendalem_sesaot_narmada_lombok_barat.jpg"
+                        alt="Avatar" style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2>Air Terjun Sitimbulan</h2>
+                        <p style="font-size: 10px;">Merupakan sebuah daerah khusus yang terletak di pusat kota.</p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.50.000</p>
+                            <p class="harga">Rp.7.000</p>
                         </div>
                     </div>
                 </div>
+                <!-- 2 -->
                 <div class="card">
-                    <img src="images/Hal 2/Jalan.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 1/Medan/medan2.jpg" alt="Avatar" style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2>Aek Saboan Julu</h2>
+                        <p style="font-size: 10px;">Merupakan objek wisata alam yang ada di Tapanuli Selatan Sumatera
+                            Utara.</p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.50.000</p>
+                            <p class="harga">Rp.25.000</p>
                         </div>
                     </div>
                 </div>
+                <!-- 3 -->
                 <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 1/Tapanuli/Danau Marsabut.jpg" alt="Avatar"
+                        style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Sipirok, Tapanuli Selatan</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2>Danau Marsabut</h2>
+                        <p style="font-size: 10px;">Wisata alam berupa danau yang terletak di Tapanuli Selatan Sumatera
+                            Utara.</p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.50.000</p>
+                            <p class="harga">Rp.15.000</p>
                         </div>
                     </div>
                 </div>
@@ -133,230 +145,246 @@
         <div class="card-group">
             <div class="card-container">
                 <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 1/Purbalingga/Jembatan Kayu.jpg" alt="Avatar"
+                        style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Panusupan Rembang, Purbalingga</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2 style="font-size: 21px;font-weight: bold;">Jembatan Cinta Pring</h2>
+                        <p style="font-size: 10px;">terbuat dari bambu pring wulung yang berbentuk hati.</p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.50.000</p>
+                            <p class="harga">Rp.10.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 2/Lain/airterjun.jpeg" alt="Avatar" style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2>Air Terjun Silimalima</h2>
+                        <p style="font-size: 10px;">Air Terjun Silima-Lima ini menyuguhkan potret alam yang luar biasa
+                            menakjubkan</p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.40.000</p>
+                            <p class="harga">Rp.10.000</p>
                         </div>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
+                    <img src="images/Hal 1/Lampung/Teluk Kilauan.jpg" alt="Avatar" style="width:100%;  height: 200px;">
                     <div class="container">
                         <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
+                            <p class="lokasi" style="color: orange;">Kelumbayan , Tanggamus</p>
                         </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
+                        <h2>Teluk Kiluan</h2>
+                        <p style="font-size: 10px;"> teluk yang berada di Kabupaten Tanggamus, terkenal dengan
+                            lumba-lumba dan paus. </p>
                         <hr>
                         <div>
-                            <p class="harga">Rp.50.000</p>
+                            <p class="harga">Rp.30.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grup 3 -->
+            <div class="container-ghosting"></div>
+            <div class="card-group">
+                <h3 style="margin: 10px 20px; font-size: 25px;">Terpopuler</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/Hal 1/Medan/medan2.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
+                            </div>
+                            <h2>Aek Saboan Julu</h2>
+                            <p style="font-size: 10px;">Merupakan objek wisata alam yang ada di Tapanuli Selatan
+                                Sumatera
+                                Utara</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/Hal 1/NTT/Pantai Manikin.jpg" alt="Avatar" style="width:100%;  height: 205px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Kupang Tengah, Kupang</p>
+                            </div>
+                            <h2>Pantai Manikin</h2>
+                            <p style="font-size: 10px;">Merupakan pantai unik dan indah yang berada di Kota Kupang</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.7.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/Hal 2/Lain/alam2.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Samosir, Toba</p>
+                            </div>
+                            <h2>Danau Toba</h2>
+                            <p style="font-size: 10px;">Salah satu tempat wisata paling diketahui masyarakat</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.25.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Discon -->
+            <div class="container-ghosting"></div>
+            <div class="card-group-disc">
+                <h3 style="margin: 10px 20px; font-size: 25px;">Diskon</h3>
+                <div class="card-container">
+                    <!-- 1 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 5%</div>
+                        <img src="images/Hal 1/Purbalingga/Goa Lawa.jpeg" alt="Avatar"
+                            style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Siwarak, Purbalingga</p>
+                            </div>
+                            <h2>Goa Lawa</h2>
+                            <p style="font-size: 10px;">Tempat wisata goa yang merupakan habitat bagi kelelawar</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.28.500</p>
+                                <p class="harga">Rp.30.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 5%</div>
+                        <img src="images/Hal 2/Lain/air panas.jpg" alt="Avatar"
+                            style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Muda Hulu, Deli Serdang</p>
+                            </div>
+                            <h2>Danau Linting</h2>
+                            <p style="font-size: 10px;">Tempat wisata air panas, cocok menghilangkan lelah</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.19.000</p>
+                                <p class="harga">Rp.20.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 5%</div>
+                        <img src="images/Hal 2/Lain/bukitkapur.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Bukit Nenas, Dumai</p>
+                            </div>
+                            <h2>Bukit Kapur</h2>
+                            <p style="font-size: 10px;">Bukit yang sebenarnya sebuah tambang, tetapi berubah jadi tempat
+                                wisata</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.13.500</p>
+                                <p class="harga">Rp.15.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Baru -->
+            <div class="container-ghosting"></div>
+            <div class="card-group">
+                <h3 style="margin: 10px 20px; font-size: 25px;">Baru</h3>
+                <div class="card-container">
+                    <!-- 1 -->
+                    <div class="card">
+                        <img src="images/Hal 2/Lain/Danausiais.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
+                            </div>
+                            <h2>Danau Siais</h2>
+                            <p style="font-size: 10px;">Danau terbesar kedua di Sumatera Utara setelah Danau Toba Selain
+                                itu danau ini indah</p>
+                            <hr>
+                            <div>
+                                <p class="harga" style="color: green; font-weight: bold;">Gratis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card">
+                        <img src="images/Hal 2/Lain/airterjun.jpeg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
+                            </div>
+                            <h2>Air Terjun Silimalima</h2>
+                            <p style="font-size: 10px;">Air Terjun Silima-Lima ini menyuguhkan potret alam yang luar
+                                biasa menakjubkan</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.10.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card">
+                        <img src="images/Hal 2/Lain/airteroh.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Sei Bingai, Langkat</p>
+                            </div>
+                            <h2 style="font-size: 20px;">Air Terjun Teroh-Teroh</h2>
+                            <p style="font-size: 10px;">Air Terjun Teroh-Teroh dan Kolam Abadi, destinasi wisata yang
+                                menawan </p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.10.000</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Grup 3 -->
-        <div class="container-ghosting"></div>
-        <div class="card-group">
-            <h3 style="margin: 10px 20px; font-size: 25px;">Terpopuler</h3>
-            <div class="card-container">
-                <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.40.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
+        <!-- Fotter -->
+        <footer>
+            <div class="footer-left">
+                <img src="images/logo.png" alt="logo-footer">
+                <p>website yang menyediakan informasi tentang tempat wisata lokal, menyediakan video untuk wisatawan
+                    mempermudah wisatawan dalam menuju perjalanan</p>
+            </div>
+            <div class="footer-center">
+                <p>Kontak</p>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-solid fa-phone"></i>
+                <p>Media Sosial</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footer-right">
+                <p>Produk </p>
+                <div class="item">
+                    <p><i class="fa-solid fa-house"></i>Beranda</p>
+                    <p><i class="fa-solid fa-calendar-days"></i>Event</p>
+                    <p><i class="fa-solid fa-place-of-worship"></i>Tempat Wisata</p>
+                    <p><i class="fa-solid fa-user"></i>Profile</p>
                 </div>
             </div>
-        </div>
-        <!-- Discon -->
-        <div class="container-ghosting"></div>
-        <div class="card-group-disc">
-            <h3 style="margin: 10px 20px; font-size: 25px;">Diskon</h3>
-            <div class="card-container">
-                <div class="card">
-                    <div class="diskont">Diskon 10%</div>
-                    <img src="images/Hal 2/Diskon/Rusa.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div class="harga-container">
-                            <p class="harga-disc">Rp.40.000</p>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Diskon 1 -->
-                <div class="card">
-                    <div class="diskont">Diskon 10%</div>
-                    <img src="images/Hal 2/Diskon/Sawah.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div class="harga-container">
-                            <p class="harga-disc">Rp.40.000</p>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="diskont">Diskon 10%</div>
-                    <img src="images/Hal 2/Diskon/Taman.png" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div class="harga-container">
-                            <p class="harga-disc">Rp.40.000</p>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Baru -->
-        <div class="container-ghosting"></div>
-        <div class="card-group">
-            <h3 style="margin: 10px 20px; font-size: 25px;">Baru</h3>
-            <div class="card-container">
-                <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.40.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <a href="../Bagian Alex/login.html"><img src="images/Hal 2/Bangku.jpg" alt="Avatar" style="width:100%"></a>
-                    <div class="container">
-                        <div class="lokasi-info">
-                            <p class="lokasi" style="color: orange;">Kab, Prov</p>
-                        </div>
-                        <h2>Pulau Indah</h2>
-                        <p>Destinasi Liburan Impian</p>
-                        <hr>
-                        <div>
-                            <p class="harga">Rp.50.000</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer-left">
-            <img src="images/logo.png" alt="logo-footer">
-            <p>website yang menyediakan informasi tentang tempat wisata lokal, menyediakan video untuk wisatawan
-                mempermudah wisatawan dalam menuju perjalanan</p>
-        </div>
-        <div class="footer-center">
-            <p>Kontak</p>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-solid fa-phone"></i>
-            <p>Media Sosial</p>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-        </div>
-        <div class="footer-right">
-            <p>Produk </p>
-            <div class="item">
-                <p><i class="fa-solid fa-house"></i>Beranda</p>
-                <p><i class="fa-solid fa-calendar-days"></i>Event</p>
-                <p><i class="fa-solid fa-place-of-worship"></i>Tempat Wisata</p>
-                <p><i class="fa-solid fa-user"></i>Profile</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <script src="scripts-Menu-Tempat-Wisata.js"></script>
 
