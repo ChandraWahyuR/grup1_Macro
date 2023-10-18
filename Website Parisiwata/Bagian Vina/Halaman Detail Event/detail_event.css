@@ -20,109 +20,92 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     position: fixed;
-    width: 1300px;
+    width: 100%;
     height: 100px;
     top: 0;
     left: 0;
-    right: 0;
-}
-
-/* Style untuk logo */
-.logo img {
+  }
+  
+  .logo img {
     height: 100px;
-    /* Sesuaikan ukuran logo sesuai kebutuhan Anda */
     min-width: 44px;
     min-height: 44px;
-}
-
-/* Style untuk daftar menu */
-.nav-links {
+  }
+  
+  .nav-links {
     list-style-type: none;
     display: flex;
     gap: 20px;
-}
-
-/* Style untuk setiap item menu */
-.nav-links li {
+  }
+  
+  .nav-links li {
     margin: 0;
     font-family: "Poppins";
     padding: 10px;
-}
-
-/* Style untuk tautan menu */
-.nav-links a {
+  }
+  
+  .nav-links a {
     text-decoration: none;
     color: black;
     font-weight: 400;
-}
-
-/* Style untuk icon*/
-.nav-links i {
+  }
+  
+  .nav-links i {
     padding: 5px;
-}
-
-/* Style saat tautan dihover */
-.nav-links a:hover {
+  }
+  
+  .nav-links a:hover {
     color: #f2f2f2;
-}
-
-.nav-home {
+  }
+  
+  .nav-home {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
-
-/* Style untuk ikon */
-.nav-links svg {
-    font-size: 14px;
-    /* Ubah ukuran ikon di sini */
-    margin-right: 5px;
-    /* Jarak antara ikon dan teks menu */
-}
-
-/* Style dropdown saat mouse hover */
-.dropdown:hover .dropdown-content {
+  }
+  
+  .nav-links svg {
+    font-size: 14px; 
+    margin-right: 5px; 
+  }
+  
+  .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* Style untuk dropdown */
-.dropdown-content {
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Efek shadow dropdown */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     min-width: 160px;
     z-index: 1;
-    font-family: "Poppins";
+    font-family: "Poppins"; 
     border-radius: 10px
-}
-
-/* Style untuk item dropdown */
-.dropdown-content a {
+  }
+  
+  .dropdown-content a {
     color: black;
     padding: 10px;
     text-decoration: none;
     display: block;
     font-weight: 400;
-}
-
-/* Style saat item dropdown dihover */
-.dropdown-content a:hover {
-    background-color: #FF6207;
-}
-
-/* Header right container styles */
-.header-right {
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #FF6A16;
+  }
+  
+  .header-right {
     display: flex;
     align-items: center;
     margin-right: 20px;
-}
-
-/* Search bar styles */
-.search-bar {
+  }
+  
+  .search-bar {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -130,38 +113,44 @@ main {
     border-radius: 50px;
     padding: 5px;
     margin-right: 10px;
-}
-
-.search-bar input[type="text"] {
+  }
+  
+  .search-bar input[type="text"] {
     border: none;
     outline: none;
     padding: 5px;
     flex-grow: 1;
-}
-
-.search-button {
-    background-color: #FF6207;
+  }
+  
+  .search-button {
+    background-color: #FF6A16;
     color: #fff;
     border: none;
     border-radius: 50px;
     padding: 5px 10px;
     cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #006688;
-}
-
-.nav-container {
+  }
+  
+  .search-button:hover {
+    background-color: #e9eeef;
+  }
+  
+  .nav-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-}
+  }
 
 /* Detail Pertama Section */
 #details {
     padding-top: 20px;
 
+}
+
+.detail-isi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .detail-grid {
@@ -178,7 +167,7 @@ main {
 }
 
 .detail-name span {
-    color: var(--primaryIconColor) !important;
+    color: #FF6A16
 }
 
 .detail-left img {
@@ -198,26 +187,20 @@ main {
 
 /* Gaya garis horizontal */
 hr {
-    border: 1px solid #FF6207;
-    /* Warna dan ketebalan garis */
+    border: 1px solid #FF6A16;
     margin: 20px 0;
-    /* Jarak di atas dan di bawah garis */
 }
 
 /* Gaya bullet points */
 ul {
     list-style-type: disc;
-    /* Menggunakan tanda bulat */
     margin-left: 20px;
-    /* Jarak dari tepi kiri */
     padding-left: 0;
-    /* Hapus padding default */
 }
 
 /* Gaya teks dalam elemen <li> */
 li {
     margin: 5px 0;
-    /* Jarak antara poin-poin */
 }
 
 /* Gaya highlight */
@@ -238,16 +221,17 @@ li {
     text-align: center;
 }
 .button {
-    background-color: #FF6207;
-    width: 10%;
+    background-color: #FF6A16;
+    width: 100%;
     color: #fff;
     border: none;
     border-radius: 20px;
     padding: 5px 10px;
     cursor: pointer;
+    width: 100px;
 }
 
-/* Promo wisata */
+/* Detail Event wisata */
 #detail2s {
     padding: 3rem 0;
     margin-top: 20px;
@@ -261,13 +245,10 @@ li {
 
 .detail2 {
     border-radius: 15px;
-    /* Ubah border-radius  */
     overflow: hidden;
     border: 1px solid #ccc;
-    /* Ubah warna border  */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Tambahkan efek bayangan */
-    /* transition: transform 0.2s ease-in-out; efek animasi card saat hover */
+    transition: transform 0.2s ease-in-out;
 }
 
 /* .promo:hover {
@@ -287,11 +268,8 @@ li {
 .detail2-info {
     padding: 10px 10px;
     background-color: #f9f9f9;
-    /* Tambahkan latar belakang  */
     border-bottom-left-radius: 10px;
-    /* Tambahkan border-radius */
     border-bottom-right-radius: 10px;
-    /* Tambahkan border-radius */
     margin: 2px;
 }
 
@@ -303,11 +281,8 @@ li {
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Membagi ke dalam 4 kolom dengan ukuran yang sama */
     gap: 20px;
-    /* Jarak antara card */
     padding: 20px;
-    /* Padding untuk section card */
 }
 
 .section-title {
@@ -351,6 +326,23 @@ li {
     border-radius: 10px;
 }
 
+/* CSS untuk mengatur tampilan teks di dalam gambar */
+.image-with-text {
+    position: relative;
+}
+
+.text-over-image {
+    position: absolute;
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 5px 10px; 
+    text-decoration: underline;
+    font-weight: bold ;
+    width: 50%;
+}
+
 #dokumens {
     margin-top: 50px;
 }
@@ -362,16 +354,12 @@ li {
 .dokumen-image-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Membagi ruang menjadi 4 kolom yang sama lebar */
     gap: 10px;
-    /* Jarak antara gambar */
 }
 
 .dokumen-image-grid img {
     width: 100%;
-    /* Gambar mengisi seluruh lebar kolom */
     height: auto;
-    /* Biarkan tinggi gambar mengikuti aspek asli */
     border-radius: 10px;
 }
 
@@ -384,14 +372,12 @@ li {
 
 .soon-event {
     border-radius: 15px;
-    /* Ubah border-radius sesuai keinginan Anda */
     overflow: hidden;
     border: 1px solid #ccc;
-    /* Ubah warna border sesuai keinginan Anda */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Tambahkan efek bayangan */
-    /* transition: transform 0.2s ease-in-out;  efek animasi saat hover */
+    transition: transform 0.2s ease-in-out; 
 }
+
 
 /* .soon-event:hover {
     transform: translateY(-5px);  // efek animasi saat hover pada card 
@@ -399,6 +385,20 @@ li {
 
 .soon-event-cover {
     height: 250px;
+    position: relative;
+}
+
+.event-harga {
+    position: absolute;
+    background-color: #FF6A16;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+    top: 5px;
+    right: 7px;
+    z-index: 1;
 }
 
 .soon-event img {
@@ -410,27 +410,25 @@ li {
 .soon-event-info {
     padding: 10px 10px;
     background-color: #f9f9f9;
-    /* Tambahkan latar belakang sesuai keinginan Anda */
     border-bottom-left-radius: 10px;
-    /* Tambahkan border-radius sesuai keinginan Anda */
     border-bottom-right-radius: 10px;
-    /* Tambahkan border-radius sesuai keinginan Anda */
 }
 
 .soon-event h4 {
     font-weight: 300;
     font-size: 1.05rem;
-    color: orangered;
+    color: #FF6A16;
 }
 
 .soon-event-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Membagi ke dalam 4 kolom dengan ukuran yang sama */
     gap: 20px;
-    /* Jarak antara card */
     padding: 20px;
-    /* Padding untuk section card */
+}
+.tanggal {
+    font-size: 10px;
+    text-align: right;
 }
 
 /* Footer */

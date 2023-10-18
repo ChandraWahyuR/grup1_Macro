@@ -159,24 +159,35 @@ body {
     margin: 0;
 }
 .menu {
-    margin-top: 150px;
+  margin-top: 20px;
+  
 
 }
 
 .menu ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .menu li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .menu button{
-    width: 100px;
-    color: black;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.menu button:hover 
+{
+  background-color: #FF6207;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+
 }
 .container{
     width: 70%;
@@ -199,14 +210,31 @@ form {
 .form-group {
     margin-bottom: 20px;
 }
-.name-input{
-    width: 430px;
-    display: flex;
-    flex-direction: row;
-
-
+.inputan  {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.inputan .field1 {
+  width: 180px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  gap :2px   
+}
+.inputan .field2 {
+  width: 180px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  gap :2px   
 }
 
+.namauser{
+  gap: 5px;
+}
 label {
     display: block;
     margin-bottom: 5px;
@@ -221,12 +249,20 @@ input, textarea {
 
 button {
     background-color: #f7f8f8;
-    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    color: #FF6207;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+}
+button:hover 
+{
+  background-color: #FF6207;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  color: #fff;
+
 }
 footer {
     background-color: #333;
