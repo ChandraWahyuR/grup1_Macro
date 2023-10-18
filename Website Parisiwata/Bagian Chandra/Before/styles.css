@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+/* Carosel */
+.carousel {
+    padding: 0 0.1px;
+}
+
+.carousel img{
+    padding: 0px 0px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+/* Card Kategori */
+.container-pembungkus {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 50px; 
+    
+}
+
+.card-kategori {
+    width: 200px; 
+    height: 200px; 
+    text-align: center; 
+    background-color: #ffff;
+    border: 1px solid #CECECE;
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+}
+
+.container-pembungkus i{
+    color: #FE8D4D;
+}
+
+.card-kategori i {
+    display: block;
+    font-size: 75px;
+    margin: 20px;
+}
+
+.card-kategori h3 {
+    margin-top: 10px;
+    font-size: 18px; 
+}
+
+/* Tombol */
+.carousel-button {
+    background: #a4a4a4;
+    color: white;
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+}
+
+#prevButton {
+    left: 10px;
+    margin-left: 50px;
+}
+
+#nextButton {
+    right: 10px;
+    margin-right: 50px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*  */
+
+
+/*  */
+
+/* Container Filter dan Card */
+.body-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+/* Sub judul */
+.sub-judul-tempat {
+    text-align: center; 
+    margin: 200px ; 
+}
+
+/* Filter Box */
+
+/* Filter */
+.container-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 0px 20px 20px;
+}
+
+.filter-box {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-box h1 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: #FF6A16;
+}
+
+.dropdown-filter #kab-drop{
+    margin-top: 35px;
+}
+
+.dropdown-filter #kot-drop{
+    margin-bottom: 35px;
+}
+
+.filter-box button {
+    padding: 10px 20px;
+    background-color: #FF6A16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+#btnCari {
+    font-weight: bold;
+}
+
+button#btnCari {
+    background-color: #FF6A16;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+button#btnCari i {
+    margin-right: 5px;
+}
+
+
+.dropdown-filter select {
+    width: 100px;
+}
+
+#kab-drop,
+#kot-drop {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#kab-drop:hover,
+#kot-drop:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+
+/*  */
+
+/* Ghosting Box */
+.container-ghosting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 0px 20px 20px;
+}
+
+/* Style untuk judul kelompok */
+.group-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Card */
+.card {
+    position: relative;
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-info {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.lokasi {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.lokasi-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    margin-bottom: 8px;
+}
+
+
+.lokasi-info h2 {
+    font-size: 1.5rem;
+    color:  #FF6A16;
+    margin: 0;
+}
+
+.lokasi-info p {
+    margin: 0;
+    color: #888;
+}
+
+.lokasi-info .harga {
+    font-weight: bold;
+    color: #f60;
+    margin-top: 8px;
+}
+
+.card .harga {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgb(165, 165, 165);
+}
+
+
+.container {
+    padding: 10px;
+}
+
+
+.card hr {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Harga */
+
+.harga-container {
+    position: relative;/* Absolut Powah */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-group-disc .harga {
+    padding-bottom: 20px;
+    color: #FF0000;
+    text-decoration: line-through;
+}
+
+.card-group-disc .harga-disc {
+    position: absolute;
+    top: 0;
+    color: #FF6A16;
+    padding: 30px;
+}
+
+
+.diskont {
+    position: absolute;
+    background-color: #FF6A16;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+    top: 5px;
+    left: 7px;
+    z-index: 1;
+}
+
+.sub-judul-tempat {
+    margin: 25px 5px;
+}
+
+/*  */
+.navbar {
+    background-color: #fffefe;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    }
+    
+    .logo img {
+    height: 100px;
+    min-width: 44px;
+    min-height: 44px;
+    }
+    
+    .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    }
+    
+    .nav-links li {
+    margin: 0;
+    font-family: "Poppins";
+    padding: 10px;
+    }
+    
+    .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    }
+    
+    .nav-links i {
+    padding: 5px;
+    }
+    
+    .nav-links a:hover {
+    color: #f2f2f2;
+    }
+    
+    .nav-home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    }
+    
+    .nav-links svg {
+    font-size: 14px; 
+    margin-right: 5px; 
+    }
+    
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
+    
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    min-width: 160px;
+    z-index: 1;
+    font-family: "Poppins"; 
+    border-radius: 10px
+    }
+    
+    .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    }
+    
+    .dropdown-content a:hover {
+    background-color: #FF6207;
+    }
+    
+    .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    }
+    
+    .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 10px;
+    }
+    
+    .search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-grow: 1;
+    }
+    
+    .search-button {
+    background-color: #FF6207;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+    }
+    
+    .search-button:hover {
+    background-color: #006688;
+    }
+    
+    .nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    }
+    
+    .more {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    
+    .mybtn ,.login-btn {
+      background-color:#FF6207;
+      color: #fff;
+      font-size: 18px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+    }

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pariwisata</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Website Parisiwata/Bagian Chandra/styles/fotter/foter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="/Website Parisiwata/Bagian Alex/homebefore.html"><i class="fa-solid fa-house"></i>Beranda</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn"><i class="fa-solid fa-calendar-days"></i>Event</a>
+                    <div class="dropdown-content">
+                        <a href="#">Event</a>
+                        <a href="#">Promo</a>
+                    </div>
+                </li>
+                <li><a href="../Bagian Chandra/Menu Tempat Wisata Sudah Masuk Provinsi.html"  style="text-decoration: underline;"><i class="fa-solid fa-place-of-worship"></i>Tempat Wisata</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i>Profile</a></li>
+    
+                <div class="header-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Cari...">
+                        <button class="search-button"><i class="fa fa-fw fa-search"></i></button>
+                    </div> 
+                </div>
+            </ul>
+        </div>
+        <a class="cta" href="login.html"><button class="login-btn">Daftar/Masuk</button></a>
+    </nav>
+    <!-- Carosel -->
+    <div class="carousel">
+        <img src="images/Hal 1/Mahal.jpg" alt="Nama Gambar">
+    </div>
+    <!-- Card Kategori -->
+    <div class="sub-judul-tempat" style="margin: 20px; font-size: 30px;">
+        <h3>Jelajahi kategori Pariwisata</h3>
+    </div>
+    <div class="ultimate-container">
+        <div class="carousel-container">
+            <button id="prevButton" class="carousel-button"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="container-pembungkus">
+                <div class="card-kategori">
+                    <i class="fa-solid fa-person-swimming"></i>
+                    <div class="card-content">
+                        <h3>Taman Bermain</h3>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card-kategori">
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <div class="card-content">
+                        <h3>Pantai</h3>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="card-kategori">
+                    <i class="fa-solid fa-mountain-sun"></i>
+                    <div class="card-content">
+                        <h3>Pendakian</h3>
+                    </div>
+                </div>
+                <!--  -->
+                <a href="Tempat Wisata kategori.html">
+                    <div class="card-kategori">
+                        <i style="height: 50px; padding-bottom: 35px;" class="fa-solid fa-tree"></i>
+                        <div class="card-content">
+                            <h3>Alam</h3>
+                        </div>
+                    </div>
+                </a>
+                <div class="card-kategori">
+                    <i class="fa-solid fa-question"></i>
+                    <div class="card-content">
+                        <h3>Coming Soon</h3>
+                    </div>
+                </div>
+                <div class="card-kategori">
+                    <i class="fa-solid fa-question"></i>
+                    <div class="card-content">
+                        <h3>Coming Soon</h3>
+                    </div>
+                </div>
+            </div>
+            <button id="nextButton" class="carousel-button"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+
+        <!--  -->
+        <div class="sub-judul-tempat" style="margin: 30px 20px;">
+            <h3>Rekomendasi Pariwisata dari berbagai wilayah</h3>
+        </div>
+        <div class="body-item">
+            <!-- Filter Box -->
+            <div class="container-filter">
+                <div class="filter-box">
+                    <h1>Filter: </h1>
+                    <div class="dropdown-filter">
+                        <select id="kab-drop">
+                            <option>Kab/Prov</option>
+                        </select>
+                        <div class="caret"></div>
+                    </div>
+                    <div class="dropdown-filter">
+                        <select id="kot-drop">
+                            <option>Kota</option>
+                        </select>
+                    </div>
+                    <button id="btnCari"><i class="fa-solid fa-magnifying-glass"></i>Cari</button>
+                </div>
+            </div>
+
+            <!-- Card -->
+            <!-- 1 -->
+            <div class="card-container">
+                <div class="card">
+                    <img src="images/Hal 1/Tapanuli/Air_terjun_tibu_sendalem_sesaot_narmada_lombok_barat.jpg"
+                        alt="Avatar" style="width:100%;  height: 200px;">
+                    <div class="container">
+                        <div class="lokasi-info">
+                            <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
+                        </div>
+                        <h2>Air Terjun Sitimbulan</h2>
+                        <p style="font-size: 10px;">Merupakan sebuah daerah khusus yang terletak di pusat kota</p>
+                        <hr>
+                        <div>
+                            <p class="harga">Rp.7.000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="card">
+                    <img src="images/Hal 1/Tapanuli/Danau Marsabut.jpg" alt="Avatar"
+                        style="width:100%;  height: 200px;">
+                    <div class="container">
+                        <div class="lokasi-info">
+                            <p class="lokasi" style="color: orange;">Sipirok, Tapanuli Selatan</p>
+                        </div>
+                        <h2>Danau Marsabut</h2>
+                        <p style="font-size: 10px;">Wisata alam berupa danau yang terletak di Tapanuli Selatan Sumatera
+                            Utara</p>
+                        <hr>
+                        <div>
+                            <p class="harga">Rp.15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="card">
+                    <img src="images/Hal 1/Medan/medan2.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                    <div class="container">
+                        <div class="lokasi-info">
+                            <p class="lokasi" style="color: orange;">Marancar, Tapanuli Selatan</p>
+                        </div>
+                        <h2>Aek Saboan Julu</h2>
+                        <p style="font-size: 10px;">Salah satu objek menarik yang harus dikunjungi diTapanuli</p>
+                        <hr>
+                        <div>
+                            <p class="harga">Rp.25.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Terghosting -->
+            <div class="container-ghosting"></div>
+            <div class="card-group">
+                <div class="card-container">
+                    <!-- 4 -->
+                    <div class="card">
+                        <img src="images/Hal 1/Medan/medan.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Medan Barat, Medan</p>
+                            </div>
+                            <h2>Kesawan Square</h2>
+                            <p style="font-size: 10px;">merupakan sebuah daerah khusus yang terletak di pusat kota</p>
+                            <hr>
+                            <div>
+                                <p class="harga" style="color: green; font-weight: bold;">Gratis</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card">
+                        <img src="images/Hal 1/Medan/Kolam Citra.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Medan Johor, Medan</p>
+                            </div>
+                            <h2>Kolam Citra Wisata</h2>
+                            <p style="font-size: 10px;">Ini Kolam Renang Citra Wisata, yang berlokasi di area Perumahan
+                                Citra</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.50.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="card">
+                        <img src="images/Hal 1/Medan/Jejak China.jpeg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Medan Marelan, Medan</p>
+                            </div>
+                            <h2 style="font-size: 20px;font-weight: bold;">Museum Situs Kota China</h2>
+                            <p style="font-size: 10px;">Sebuah situs arkeologi yang terletak di tepi danau Siombak</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.15.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="container-ghosting"></div>
+            <div class="card-group">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/Hal 1/NTT/Pantai Manikin.jpg" alt="Avatar" style="width:100%;  height: 205px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Kupang Tengah, Kupang</p>
+                            </div>
+                            <h2>Pantai Manikin</h2>
+                            <p style="font-size: 10px;">Merupakan pantai unik dan indah yang berada di Kota Kupang</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.7.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class="card">
+                        <img src="images/Hal 1/Lampung/Teluk Kilauan.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Kelumbayan , Tanggamus</p>
+                            </div>
+                            <h2>Teluk Kiluan</h2>
+                            <p style="font-size: 10px;"> teluk yang berada di Kabupaten Tanggamus, terkenal dengan lumba-lumba dan paus</p>
+                            <hr>
+                            <div>
+                                <p class="harga">Rp.30.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 9 -->
+                    <a href="/Website Parisiwata/Bagian Alex/login.html">
+                        <div class="card">
+                            <img src="images/istana.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                            <div class="container">
+                                <div class="lokasi-info">
+                                    <p class="lokasi" style="color: orange;">Medan Maimun, Medan</p>
+                                </div>
+                                <h2>Istana Maimun</h2>
+                                <p style="font-size: 10px;">Istana Kesultanan Deli yang merupakan salah satu ikon Kota Medan</p>
+                                <hr>
+                                <div>
+                                    <p class="harga">Rp.1000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Diskon 1 -->
+            <div class="container-ghosting"></div>
+            <div class="card-group-disc">
+                <h3 style="margin: 20px;">Diskon dan Rekomendasi Tempat Pariwisata Baru</h3>
+                <div class="card-container">
+                    <!-- Disc 1 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 5%</div>
+                        <img src="images/Hal 1/Lampung/Museum_Lampung.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;"> Bandar Lampung, Lampung</p>
+                            </div>
+                            <h2>Museum Lampung</h2>
+                            <p style="font-size: 10px;">Tempat pariwisata yang memiliki Biologika, Geologika, Seni Rupa serta Teknologika dll.</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.9.500</p>
+                                <p class="harga">Rp.10.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Disc 2 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 25%</div>
+                        <img src="images/Hal 1/Bandung/Rabbit-Town.png" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Cidadap, Bandung</p>
+                            </div>
+                            <h2>Rabbit Town</h2>
+                            <p style="font-size: 10px;">Tempat wisata yang merupakan spot foto terbaik, dengan keunikan warnanya</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.37.500</p>
+                                <p class="harga">Rp.50.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Disc 3 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 10%</div>
+                        <img src="images/Hal 1/Lampung/Pucuk Lampung.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Bandar Lampung, Lampung</p>
+                            </div>
+                            <h2>Puncak Mas</h2>
+                            <p style="font-size: 10px;">Merupakan kawasan wisata yang memilki taman cantik dan terletak di sebuah bukit Puncak Mas.</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.27.000</p>
+                                <p class="harga">Rp.30.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Diskon 2 -->
+            <div class="container-ghosting"></div>
+            <div class="card-group-disc">
+                <div class="card-container">
+                    <!-- Disc 4 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 10%</div>
+                        <img src="images/Hal 1/Bandung/NuArt.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Parongpong, Bandung</p>
+                            </div>
+                            <h2>NuArt Studio</h2>
+                            <p style="font-size: 10px;">Museum galeri yang memarkan seni 3dimensi berupa ukiran patung.</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.54.000</p>
+                                <p class="harga">Rp.60.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Disc 5 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 5%</div>
+                        <img src="images/Hal 1/Purbalingga/Goa Lawa.jpeg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Siwarak, Purbalingga</p>
+                            </div>
+                            <h2>Goa Lawa</h2>
+                            <p style="font-size: 10px;">Tempat wisata goa yang merupakan habitat bagi kelelawar.</p>
+                            <hr>
+                            <div class="harga-container">
+                                <p class="harga-disc">Rp.28.500</p>
+                                <p class="harga">Rp.30.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Disc 6 -->
+                    <div class="card">
+                        <div class="diskont">Diskon 10%</div>
+                        <img src="images/Hal 1/Bandung/Pangelangan.jpg" alt="Avatar" style="width:100%;  height: 200px;">
+                        <div class="container">
+                            <div class="lokasi-info">
+                                <p class="lokasi" style="color: orange;">Pangelangan, Bandung</p>
+                            </div>
+                            <h2>Pangalengan</h2>
+                            <p style="font-size: 10px;">memiliki banyak sekali objek wisata menarik untuk dikunjungi keluarga.</p>
+                            <hr>
+                            <div>
+                                <div class="harga-container">
+                                    <p class="harga-disc">Rp.22.500</p>
+                                    <p class="harga">Rp.25.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-left">
+                <img src="images/logo.png" alt="logo-footer">
+                <p>website yang menyediakan informasi tentang tempat wisata lokal, menyediakan video untuk wisatawan
+                    mempermudah wisatawan dalam menuju perjalanan</p>
+            </div>
+            <div class="footer-center">
+                <p>Kontak</p>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-solid fa-phone"></i>
+                <p>Media Sosial</p>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="footer-right">
+                <p>Produk </p>
+                <div class="item">
+                    <p><i class="fa-solid fa-house"></i>Beranda</p>
+                    <p><i class="fa-solid fa-calendar-days"></i>Event</p>
+                    <p><i class="fa-solid fa-place-of-worship"></i>Tempat Wisata</p>
+                    <p><i class="fa-solid fa-user"></i>Profile</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+
+<script src="/Website Parisiwata/Bagian Chandra/scripts-Menu-Tempat-Wisata.js"></script>
+
+</html>
