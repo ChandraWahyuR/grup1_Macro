@@ -210,14 +210,31 @@ form {
 .form-group {
     margin-bottom: 20px;
 }
-.name-input{
-    width: 430px;
-    display: flex;
-    flex-direction: row;
-
-
+.inputan  {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.inputan .field1 {
+  width: 215px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #FF6207;
+  gap :2px   
+}
+.inputan .field2 {
+  width: 187px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #FF6207;
+  gap :2px   
 }
 
+.namauser{
+  gap: 5px;
+}
 label {
     display: block;
     margin-bottom: 5px;
