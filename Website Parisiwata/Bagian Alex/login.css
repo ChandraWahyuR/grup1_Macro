@@ -70,11 +70,13 @@ input {
     margin-right: 2px;
 }
 
-input[type="checkbox"]:checked {
-    background-color: #ffa12c; /* Ubah warna latar belakang ketika dicentang */
-    border: 1px solid #ffa12c; /* Ubah warna border ketika dicentang */
-    color: #fff; /* Ubah warna teks ketika dicentang */
-}
+/*  */
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+    accent-color: #ff6207;
+  }
+/*  */
 .masuk {
     display: block;
     width: 422px;
@@ -85,6 +87,10 @@ input[type="checkbox"]:checked {
     cursor: pointer;
     font-weight: 600;
     color: white;
+}
+.masuk a {
+    text-decoration: none;
+    color :black;
 }
 .lupa {
     text-align: center;
