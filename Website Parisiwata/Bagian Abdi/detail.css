@@ -254,7 +254,7 @@ body {
     border-radius: 10px;
     border: none;
     text-align: center;
-    margin-left: 50%;
+    width: 100%;
     background-color: #FF6207;
     color: black;
 }
