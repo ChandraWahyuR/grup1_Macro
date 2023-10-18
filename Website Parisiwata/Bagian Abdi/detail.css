@@ -254,8 +254,7 @@ body {
     border-radius: 10px;
     border: none;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin-left: 50%;
     background-color: #FF6207;
     color: black;
 }
