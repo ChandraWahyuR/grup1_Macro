@@ -28,85 +28,85 @@ main {
     top: 0;
     left: 0;
     /* right: 0; */
-  }
-  
-  .logo img {
+}
+
+.logo img {
     height: 100px;
     min-width: 44px;
     min-height: 44px;
-  }
-  
-  .nav-links {
+}
+
+.nav-links {
     list-style-type: none;
     display: flex;
     gap: 20px;
-  }
-  
-  .nav-links li {
+}
+
+.nav-links li {
     margin: 0;
     font-family: "Poppins";
     padding: 10px;
-  }
-  
-  .nav-links a {
+}
+
+.nav-links a {
     text-decoration: none;
     color: black;
     font-weight: 400;
-  }
-  
-  .nav-links i {
+}
+
+.nav-links i {
     padding: 5px;
-  }
-  
-  .nav-links a:hover {
+}
+
+.nav-links a:hover {
     color: #f2f2f2;
-  }
-  
-  .nav-home {
+}
+
+.nav-home {
     display: flex;
     flex-direction: row;
     gap: 20px;
-  }
-  
-  .nav-links svg {
-    font-size: 14px; 
-    margin-right: 5px; 
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.nav-links svg {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     min-width: 160px;
     z-index: 1;
-    font-family: "Poppins"; 
+    font-family: "Poppins";
     border-radius: 10px
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 10px;
     text-decoration: none;
     display: block;
     font-weight: 400;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #FF6207;
-  }
-  
-  .header-right {
+}
+
+.dropdown-content a:hover {
+    background-color: #FF6A16;
+}
+
+.header-right {
     display: flex;
     align-items: center;
     margin-right: 20px;
-  }
-  
-  .search-bar {
+}
+
+.search-bar {
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -114,36 +114,36 @@ main {
     border-radius: 50px;
     padding: 5px;
     margin-right: 10px;
-  }
-  
-  .search-bar input[type="text"] {
+}
+
+.search-bar input[type="text"] {
     border: none;
     outline: none;
     padding: 5px;
     flex-grow: 1;
-  }
-  
-  .search-button {
-    background-color: #FF6207;
+}
+
+.search-button {
+    background-color: #FF6A16;
     color: #fff;
     border: none;
     border-radius: 50px;
     padding: 5px 10px;
     cursor: pointer;
-  }
-  
-  .search-button:hover {
+}
+
+.search-button:hover {
     background-color: #006688;
-  }
-  
-  .nav-container {
+}
+
+.nav-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-  }
+}
 
- /* carousel */
- .container{
+/* carousel */
+.container {
     /* width: 120vmin; */
     /* position: absolute; */
     /* transform: translate(-50%,-50%); */
@@ -161,45 +161,55 @@ main {
     overflow: hidden;
 
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     display: flex;
     animation: slide 16s infinite;
 }
 
-.wrapper img{
+.wrapper img {
     width: 100%;
     box-sizing: border-box;
 }
+
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
+
     20% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-100%);
     }
+
     45% {
         transform: translateX(-100%);
     }
+
     50% {
         transform: translateX(-200%);
     }
+
     70% {
         transform: translateX(-200%);
     }
+
     75% {
         transform: translateX(-300%);
     }
+
     95% {
         transform: translateX(-300%);
     }
+
     100% {
-        transform: translateX(0); 
+        transform: translateX(0);
     }
-  }
+}
 
 /* Promo wisata */
 #promos {
@@ -226,7 +236,21 @@ main {
     transform: translateY(-5px); // menentukan efek animasi pada crad 
   } */
 
+.promo-isi {
+    position: absolute;
+    background-color: #FF6A16;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+    top: 5px;
+    right: 7px;
+    z-index: 1;
+}
+
 .promo-cover {
+    position: relative;
     height: 250px;
 }
 
@@ -250,7 +274,7 @@ main {
 .promo h4 {
     font-weight: 300;
     font-size: 1.05rem;
-    color: orangered;
+    color: #FF6A16;
 }
 
 .tanggal {
@@ -287,7 +311,7 @@ main {
     display: block;
     width: 10%;
     text-align: center;
-    background-color: orangered;
+    background-color: #FF6A16;
     color: white;
     padding: 10px;
     text-decoration: none;
@@ -317,11 +341,25 @@ main {
 }
 
 /* .soon-event:hover {
-    transform: translateY(-5px);  // efek animasi saat hover pada card 
+     transform: translateY(-5px);  efek animasi saat hover pada card  
   }  */
 
 .soon-event-cover {
     height: 250px;
+    position: relative;
+}
+
+.event-harga {
+    position: absolute;
+    background-color: #FF6A16;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 20px;
+    top: 5px;
+    right: 7px;
+    z-index: 1;
 }
 
 .soon-event img {
@@ -343,7 +381,7 @@ main {
 .soon-event h4 {
     font-weight: 300;
     font-size: 1.05rem;
-    color: orangered;
+    color: #FF6A16;
 }
 
 .soon-event-grid {
@@ -454,7 +492,7 @@ footer a:hover {
 }
 
 .search-lokasi button {
-    background-color: orangered;
+    background-color: #FF6A16;
     color: white;
     border: none;
     border-radius: 15px;
@@ -482,7 +520,7 @@ form select {
 
 /* Style untuk tombol "Urutkan" */
 form input[type="submit"] {
-    background-color: orangered;
+    background-color: #FF6A16;
     color: white;
     padding: 5px 10px;
     border: none;
