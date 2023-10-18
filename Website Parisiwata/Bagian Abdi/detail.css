@@ -253,8 +253,9 @@ body {
     padding: 10px;
     border-radius: 10px;
     border: none;
+    margin-left: 40%;
     text-align: center;
-    width: 100%;
+    width: 100px;
     background-color: #FF6207;
     color: black;
 }
