@@ -248,12 +248,12 @@ body {
     padding: 20px;
     background-color: #fffafa;
 }
-.tiket-label{
-    background-color: #ff6207;
-    color: white;
-    padding: 10px;
+button beli{
     text-align: center;
-    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6207;
+    color: black;
 }
 .tiket-ditail {
     margin-top: 20px;
