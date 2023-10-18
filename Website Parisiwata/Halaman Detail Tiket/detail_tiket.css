@@ -1,0 +1,417 @@
+/* Import font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset styling untuk menghilangkan margin dan padding default */
+.bodys {
+    background-color: #edebebb1;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+main {
+    margin: 25px;
+    margin-top: 100px;
+}
+
+/* Style dasar untuk navbar */
+.navbars {
+    background-color: #fffefe;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    /* right: 0; */
+  }
+  
+  .logo img {
+    height: 100px;
+    min-width: 44px;
+    min-height: 44px;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    margin: 0;
+    font-family: "Poppins";
+    padding: 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+  }
+  
+  .nav-links i {
+    padding: 5px;
+  }
+  
+  .nav-links a:hover {
+    color: #f2f2f2;
+  }
+  
+  .nav-home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .nav-links svg {
+    font-size: 14px; 
+    margin-right: 5px; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    min-width: 160px;
+    z-index: 1;
+    font-family: "Poppins"; 
+    border-radius: 10px
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #FF6A16;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex-grow: 1;
+  }
+  
+  .search-button {
+    background-color: #FF6A16;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #006688;
+  }
+  
+  .nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Detail Tiket */
+
+.detail-tiket {
+    display: flex;
+    justify-content: center;
+    margin: 150px;
+}
+  .cards {
+    width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.card-containers {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card-headers {
+    display: flex;
+    flex-direction: row;
+    background-color: #FF6A16;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    gap: 10px;
+}
+
+.label-group {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.label-group input {
+    height: 20px;
+}
+
+.card-lefts {
+    padding: 10px;
+}
+
+.deskripsi {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.deskripsi-tanggal {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.deskripsi-harga {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 10px;
+}
+
+span {
+    font-weight: 5px;
+}
+
+.button-buy {
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF6A16;
+    margin-left: 255px;
+    width: 100px;
+    padding-left: 40px;
+}
+
+.card-rights {
+  padding: 10px;
+}
+
+.card1 {
+  border: 1px solid #FF6A16;
+  padding: 20px;
+  width: 250px;
+  margin: 10px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+}
+
+.inner-card {
+  padding: 10px;
+  background-color: #fff3e9;
+  margin: 10px;
+  font-size: 12px;
+}
+
+.HR{
+  border: 1px solid #FF6A16;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.cards2 {
+  padding: 20px;
+  width: 400px;
+  margin: 10px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+}
+
+.H4 {
+  font-size: 15px;
+}
+
+
+  /* Footer */
+/* Style untuk footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 10px;
+    height: 45vh;
+    right: 0;
+    left: 0;
+}
+
+/* Style untuk footer bagian kiri */
+.footer-left {
+    float: left;
+    width: 33.33%;
+    font-size: 10px;
+}
+
+.footer-left img {
+    width: 80px;
+}
+
+/* Style untuk footer bagian tengah */
+.footer-center {
+    float: left;
+    width: 33.33%;
+}
+
+.footer-center i {
+    margin: 5px;
+}
+
+/* Style untuk footer bagian kanan */
+.footer-right {
+    float: left;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer-right p {
+    padding-right: 120px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 100px;
+}
+
+.item i {
+    margin: 10px;
+}
+
+/* Style teks dalam footer */
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* Style tautan dalam footer */
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Style tautan saat dihover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* judul popup */
+.judul {
+    background-color: #FF6A16;
+    border-radius: 10px;
+    display: flex;
+    width: 450px;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+.judul img {
+    width: 40px;
+}
+
+.labels {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.label-item {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px;
+}
+
+.isi-tiket {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.isi-tiket p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.isi-item {
+    padding: 5px;
+    width: 200px;
+}
+
+.icon-popup {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.icon-popup i {
+    font-size: 40px;
+}
+
