@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="tiket.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Profil</title>
@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="gb/logo.png" alt="Logo">
+            <img src="image/logo.png" alt="Logo">
         </div>
         <div class="nav-container">
             <ul class="nav-links">
@@ -45,38 +45,46 @@
     </nav>
     <div class="profile">
         <div class="user-info">
-            <img src="gb/n.jpg" alt="Foto Profil">
+            <img src="image/n.jpg" alt="Foto Profil">
         </div>
         <div>
             <h2>Andana</h2>
             <h4>Laki Laki</h4>
             <div class="menu">
-                <a href="pengaturan.html"><button type="button"><i class="fa-solid fa-gear"></i>&nbsp;Pengaturan</button></a>
-                <br>
-                <a href="../Bagian Nabilah/notifikasi/notifikasi.html"><button type="button"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;Notifikasi</button></a>
-                <br>
-                <a href="../Bagian Nabilah/Tiket/tiket.html"><button type="button"><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;&nbsp;Tiket&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
-            </div>
+        <a href="../../Bagian Abdi/Pengaturan.html"><button type="button"><i class="fa-solid fa-gear"></i>&nbsp;Pengaturan</button></a>
+        <br>
+        <a href="../notifikasi/notifikasi.html"><button type="button"><i class="fa-solid fa-bell"></i>&nbsp;&nbsp;&nbsp;Notifikasi</button></a>
+        <br>
+        <a href="../tiket/tiket.html"><button type="button"><i class="fa-solid fa-ticket"></i>&nbsp;&nbsp;&nbsp;&nbsp;Tiket&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    </div>
     </div>
         <div class="user-details">
             <form>
-                <h2>Detail</h2>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="sayacantik@gmail.com">
-                    
+                <h2>Tiket</h2>
+                <div class="kotak-group" style="display: flex;">
+                    <i class="fa-solid fa-ticket" style="margin-top: 10px;"></i> <p class="text">Tiket Anda seharga Rp 25,000,00</p>     
+                    <p class="teks">tanggal 20/9/2023 11.20 Wib</p>
+                    <button class="tombol-atas">Sukses</button>
                 </div>
-                <div class="form-group">
-                    <label for="phone">Nomor Telepon:</label>
-                    <input type="text" id="phone" name="phone">
+                <div class="kotak-group" style="display: flex;">
+                    <i class="fa-solid fa-ticket" style="margin-top: 10px;"></i> <p class="text">Tiket Anda seharga Rp 15,000,00</p>  
+                    <p class="teks">tanggal 10/10/2024 13.12 Wib</p>
+                    <button class="tombol-atas" style="background-color: chocolate;">Pending</button>
                 </div>
-                <div class="form-group">
-                    <label for="gender">Jenis Kelamin:</label>
-                    <input type="text" id="gender" name="gender">
+                <div class="kotak-group" style="display: flex;">
+                    <i class="fa-solid fa-ticket " style="margin-top: 10px;"></i> <p class="text">Tiket Anda seharga Rp 50,000,00  2 Orang</p>   
+                    <p class="teks">tanggal 20/5/2023 16.01 Wib</p>
+                    <button class="tombol-atas">Sukses</button>
                 </div>
-                <div class="form-group">
-                    <label for="address">Alamat:</label>
-                    <textarea id="address" name="address"></textarea>
+                <div class="kotak-group" style="display: flex;">
+                    <i class="fa-solid fa-ticket" style="margin-top: 10px;"></i> <p class="text">Anda seharga Rp 15,000,00  </p>
+                    <p class="teks">tanggal 10/10/2024 13.12 Wib</p>
+                    <button class="tombol-atas" style="background-color: chocolate;">Pending</button>
+                </div>
+                <div class="kotak-group" style="display: flex;">
+                    <i class="fa-solid fa-ticket" style="margin-top: 10px;"></i> <p class="text">Anda seharga Rp 30,000,00 4 orang  </p>
+                    <p class="teks">tanggal 10/10/2024 13.12 Wib</p>
+                    <button class="tombol-atas" style="background-color: chocolate;">Pending</button>
                 </div>
             </form>
         </div>
