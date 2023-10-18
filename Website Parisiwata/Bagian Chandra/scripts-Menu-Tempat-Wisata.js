@@ -2,9 +2,9 @@
 let kab = ["Lampung", "Medan",  "NTT", "Purbalingga", "Tapanuli"]
 let kotaA = ["Bandra Lampung","Metro", "Menggala", "Gunung Agung", "Kedaton"]
 let kotaB = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
-let kotaC = ["","C2", "", "", ""]
-let kotaD = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
-let kotaE = ["Medan Tuntungan","Medan Johor", "Medan Amplas", "Medan Denai", "Medan Kota", "Medan Area"]
+let kotaC = ["Bajawa","Ende", "Kupang"]
+let kotaD = ["Bobotsari","Bojongsari", "Karanganyar"]
+let kotaE = ["Marancar","Sipirok"]
 
 let sclt1 = document.getElementById("kab-drop")
 let sclt2 = document.getElementById("kot-drop")

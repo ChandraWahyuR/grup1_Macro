@@ -25,25 +25,25 @@ a {
 
 
 
-.sub-judul-hal{
+.sub-judul-hal {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0px 50px;
-    margin-top: 200px;
-    
+    margin-top: 120px;
+
 }
 
 /* Carosel */
 .carousel {
-    padding: 0 30px;
-    margin-top: -70px;
+    padding: 0 35px;
+    margin-top: -50px;
 }
 
 .carousel img {
-    padding: 70px 1px;
+    margin: 50px 1px;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 /* Container Filter dan Card */
@@ -54,16 +54,17 @@ a {
 }
 
 /* sub-judul */
-.sub-judul h3{
+.sub-judul h3 {
     display: flex;
     margin: 50px;
     margin-top: -50px;
     font-size: 25px;
 }
+
 /* Sub judul */
 .sub-judul-tempat {
-    text-align: center; 
-    margin: 200px ; 
+    text-align: center;
+    margin: 200px;
 }
 
 /* Filter */
@@ -89,11 +90,11 @@ a {
     color: #FF6A16;
 }
 
-.dropdown-filter #kab-drop{
+.dropdown-filter #kab-drop {
     margin-top: 35px;
 }
 
-.dropdown-filter #kot-drop{
+.dropdown-filter #kot-drop {
     margin-bottom: 35px;
 }
 
@@ -209,7 +210,7 @@ button#btnCari i {
 
 .lokasi-info h2 {
     font-size: 1.5rem;
-    color:  #FF6A16;
+    color: #FF6A16;
     margin: 0;
 }
 
@@ -232,7 +233,7 @@ button#btnCari i {
 }
 
 .card:hover {
-    box-shadow:0 4px 8px rgb(165, 165, 165);
+    box-shadow: 0 4px 8px rgb(165, 165, 165);
 }
 
 
@@ -248,7 +249,8 @@ button#btnCari i {
 
 /* Harga */
 .harga-container {
-    position: relative;/* Absolut Powah */
+    position: relative;
+    /* Absolut Powah */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,10 +287,103 @@ button#btnCari i {
     margin: 25px 5px;
 }
 
-.sub-judul-tempat h4{
+.sub-judul-tempat h4 {
     font-size: 30px;
 }
 
-.sub-judul-tempat span{
+.sub-judul-tempat span {
     color: #FF6A16;
+}
+
+/*  */
+
+button {
+    padding: 0px 10px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #ff6207;
+}
+
+input[type="checkbox"]::after {
+    cursor: pointer;
+    color: orange;
+    content: "";
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border: 2px solid #000;
+    background: #e9e9e9;
+    padding: 30px 0px;
+    z-index: 1001;
+    border-radius: 10px;
+    border: thin;
+}
+
+
+.tengah{
+    display: flex;
+    justify-content: center;
+}
+
+.popup-content h2 {
+    text-align: start;
+    margin-top: -10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    color: #ff6207;
+}
+
+.popup label {
+    display: block;
+    margin: 10px 0;
+}
+
+button#applySort {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button#applySort:hover {
+    background: #0056b3;
+}
+
+.custom-checkbox input{
+    color: #858282;
+}
+
+#tombol {
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+    background-color: #ff6207;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 50px;
+}
+
+.kontainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.sort-up{
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
 }
